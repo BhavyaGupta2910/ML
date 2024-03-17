@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loan Predictor</h1>
+    <br>
+    <form method="post" action="/predict" style="margin: 15px ;">
+
+        <br>
+home_owner
+
+        <input type="number" name="home_owner">
+        <br>
+income
+        <input type="number" name="income">
+        <br>
+current_address_year
+        <input type="number" name="current_address_year">
+        <br>
+has_debt
+        <input type="number" name="has_debt">
+        <br>
+amount_requested
+        <input type="number" name="amount_requested">
+        <br>
+risk_score
+        <input type="number" name="risk_score">
+        <br>
+inquiries_last_month
+        <input type="number" name="inquiries_last_month">
+        <br>
+EMPLOYED
+        <input type="number" name="EMPLOYED">
+        <br>
+        
+PA
+        <input type="number" name="PA">
+        <br>
+RISK
+        <input type="number" name="RISK">
+        <br>
+QUALITY
+        <input type="number" name="QUALITY">
+        <br>
+ADULT
+        <input type="number" name="ADULT">
+        <br>
+SENIOR
+        <input type="number" name="SENIOR">
+        <br>
+monthly
+        <input type="number" name="monthly">
+        <br>
+weekly
+        <input type="number" name="weekly">
+        <br>    <br><br>
+
+        
+    <input type="submit" value="predict">
+    <br><br>
+    <br>
+    {% if output %}
+        <p>{{output}}</p>
+    {% endif %}
+    </form>
+</body>
+</html>
